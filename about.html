@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+    <title>Code Red Agency</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">Code Red Agency</a>
+        <ul>
+            <li><a href="#home" data-ps2id-offset="100" class="active">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        
+        
+        <img src="redmoon.png" id="redmoon">
+        <img src="bird1.png" id="bird1">
+        <img src="bird2.png" id="bird2">
+        <img src="forest.png" id="forest">
+        <a href="#" id="btn">Explore</a>
+
+        <img src="wolf.png" id="wolf">
+        <img src="rocks.png" id="rocks">
+        <img src="water.png" id="water">
+        
+    </section>
+    <div class="sec">
+        <h2>Web3 Dev Agency</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quidem quibusdam molestiae suscipit ad, doloremque cupiditate consectetur modi eveniet ex voluptatibus aperiam, eius nisi impedit commodi repellat rerum illo enim?</p>
+    </div>
+    <div class="footerimage">
+        
+        <img src="bottomocean.png" id="bottomocean">
+        <img src="submarine4.png" id="submarine">
+    </div>
+
+    <script>
+        // let text = document.getElementById('text');
+        let redmoon = document.getElementById('redmoon');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let wolf = document.getElementById('wolf');
+        let rocks = document.getElementById('rocks');
+        let water = document.getElementById('water');
+        let forest = document.getElementById('forest');
+        let header = document.getElementById('header');
+        let bottomocean = document.getElementById('bottomocean');
+        let submarine = document.getElementById('submarine');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            // text.style.top = 50 + value * -0.1 + '%';
+            redmoon.style.top = value * -0.1 + '%';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.top = value * 0.5 + 'px';
+            bird2.style.top = value * -0.5 + 'px';
+            bird2.style.top = value * -0.75 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            wolf.style.top = value * -0.12 + 'px';
+            rocks.style.top = value * -0.12 + 'px';
+            forest.style.top = value * 0.25 + 'px';
+            header.style.top = value * 0.6 + 'px';
+            submarine.style.left = 150 + value * -0.175 + 'px';
+            // submarine.style.top = value * 1.5 + 'px';
+            
+            
+            
+
+        })
+    </script>
+
+
+</body>
+    
+</html>
