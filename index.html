@@ -5,15 +5,18 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <header id="header">
-        <a href="#" class="logo">Code Red Agency</a>
-        <ul>
-            <li><a href="file:///C:/Users/cavan/Documents/CodeRedAgency/index.html" class="active">Home</a></li>
-            <li><a href="file:///C:/Users/cavan/Documents/CodeRedAgency/index.html">About</a></li>
-            <li><a href="file:///C:/Users/cavan/Documents/CodeRedAgency/index.html">Services</a></li>
-            <li><a href="file:///C:/Users/cavan/Documents/CodeRedAgency/index.html">Contact</a></li>
-        </ul>
-    </header>
+    
+        <header id="header">
+            <a href="#" class="logo">Code Red Agency</a>
+            <div class="toggle"></div>
+            <ul class="navigation">
+                <li><a href="file:///C:/Users/cavan/Documents/CodeRedAgency/index.html" class="active">Home</a></li>
+                <li><a href="file:///C:/Users/cavan/Documents/CodeRedAgency/index.html">About</a></li>
+                <li><a href="file:///C:/Users/cavan/Documents/CodeRedAgency/index.html">Services</a></li>
+                <li><a href="file:///C:/Users/cavan/Documents/CodeRedAgency/index.html">Contact</a></li>
+            </ul>
+        </header>
+    
     <section>
         <!-- <h2 id="text"><span>It's time for a new</span><br>About Page</h2> -->
         
@@ -48,7 +51,15 @@
     </div> -->
 
     <script>
-        // let text = document.getElementById('text');
+        const toggleMenu = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+        toggleMenu.onclick = function(){
+            toggleMenu.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+    <script>
+        let text = document.getElementById('text');
         let redmoon = document.getElementById('redmoon');
         let bird1 = document.getElementById('bird1');
         let bird2 = document.getElementById('bird2');
