@@ -43,13 +43,38 @@
         <img src="bottomocean.png" id="bottomocean">
         <img src="submarine4.png" id="submarine">
     </div>
-
+    
   
-    <!-- <div class="footer">
+    <div class="footer">
         <h2>Contact Us</h2>
         <p>Discover ways to partner with us.</p>
-    </div> -->
+        
+        
+        <FORM NAME="myform" ACTION="" METHOD="GET">Enter something in the box: <BR>
+            <INPUT TYPE="text" NAME="name" VALUE="name"><P>
+            <INPUT TYPE="email" NAME="email" VALUE="email"><P>
+            <INPUT TYPE="text" NAME="phone" VALUE="phone"><P>
+            <br>
+            <h3>What is your budget?</h3>
+            <input type="radio" id="low" name="budget" value="low">
+            <label for="low">low</label><br>
+            <input type="radio" id="medium" name="budget" value="medium">
+            <label for="medium">medium</label><br>
+            <input type="radio" id="high" name="budget" value="high">
+            <label for="high">high</label><br>
+            <INPUT TYPE="button" NAME="button" Value="Submit" onClick="testResults(this.form)">
+            </FORM>
+    </div>
 
+    <!-- Interactive Form -->
+    <SCRIPT LANGUAGE="JavaScript">
+        function testResults (form) {
+            var TestVar = form.inputbox.value;
+            alert ("You typed: " + TestVar);
+        }
+        </SCRIPT>
+
+    <!-- Responsive Hamburger Menu -->
     <script>
         const toggleMenu = document.querySelector('.toggle');
         const navigation = document.querySelector('.navigation');
@@ -58,6 +83,8 @@
             navigation.classList.toggle('active');
         }
     </script>
+
+    <!-- Parallax Settings -->
     <script>
         let text = document.getElementById('text');
         let redmoon = document.getElementById('redmoon');
