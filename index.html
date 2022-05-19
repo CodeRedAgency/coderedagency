@@ -1,25 +1,34 @@
 <!doctype html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Code Red Agency">
+    <meta name="language-content" content="Html, Css, JavaScript">
+    <meta name="author" content="Cavanchan">
+    <meta http-equiv="Refresh" content="60">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Red Agency</title>
+
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    
-        <header id="header">
-            <a href="#" class="logo">Code Red Agency</a>
-            <div class="toggle"></div>
-            <ul class="navigation">
-                <li><a href="file:///C:/Users/cavan/Documents/CodeRedAgency/index.html" class="active">Home</a></li>
-                <li><a href="file:///C:/Users/cavan/Documents/CodeRedAgency/index.html">About</a></li>
-                <li><a href="file:///C:/Users/cavan/Documents/CodeRedAgency/index.html">Services</a></li>
-                <li><a href="file:///C:/Users/cavan/Documents/CodeRedAgency/index.html">Contact</a></li>
-            </ul>
-        </header>
-    
+
+    <!-- =================Header Start================= -->
+    <header id="header">
+        <a href="#" class="logo">Code Red Agency</a>
+        <div class="toggle"></div>
+        <ul class="navigation">
+            <li><a href="file:///C:/Users/cavan/Documents/CodeRedAgency/index.html" class="active">Home</a></li>
+            <li><a href="file:///C:/Users/cavan/Documents/CodeRedAgency/index.html">About</a></li>
+            <li><a href="file:///C:/Users/cavan/Documents/CodeRedAgency/index.html">Services</a></li>
+            <li><a href="file:///C:/Users/cavan/Documents/CodeRedAgency/index.html">Contact</a></li>
+        </ul>
+    </header>
+    <!-- =================Header End================= -->
+
+    <!-- =================Main Section Start================= -->
     <section>
         <!-- <h2 id="text"><span>It's time for a new</span><br>About Page</h2> -->
-        
         <img src="redmoon.png" id="redmoon">
         <img src="bird1.png" id="bird1">
         <img src="bird2.png" id="bird2">
@@ -30,51 +39,51 @@
         <img src="wolf.png" id="wolf">
         <img src="rocks.png" id="rocks">
         <img src="water.png" id="water">
-        
     </section>
-    <div class="sec">
-        <h2>Web3 Dev Agency</h2>
-        <p>Code Red is a web3 agency that helps brands demystify and better navigate the weird and wonderful world of web3.
+    <!-- =================Header End================= -->
 
-            Our mission, in the appropriated words of one Buzz Lightyear, is to help brands get to the metaverse…and beyond.</p>
-    </div>
-    <div class="footerimage">
-        
-        <img src="bottomocean.png" id="bottomocean">
-        <img src="submarine4.png" id="submarine">
-    </div>
-    
+    <!-- =================Article Content Start================= -->
+    <article>
+        <div class="sec">
+            <h2>Web3 Dev Agency</h2>
+            <p>Code Red is a web3 agency that helps brands demystify and better navigate the weird and wonderful world of web3.
+
+            Our mission, in the appropriated words of one Buzz Lightyear, is to help brands get to the metaverseâ€¦and beyond.</p>
+        </div>
+    </article>
+    <!-- =================Article Content End================= -->
+
+    <!-- =================Footer Content Start================= -->
+    <footer>
+        <div class="footerimage">
+            <img src="bottomocean.png" id="bottomocean">
+            <img src="submarine4.png" id="submarine">
+        </div>
+    </footer>
+     <!-- =================Footer Content End================= -->
+
   
-    <div class="footer">
-        <h2>Contact Us</h2>
-        <p>Discover ways to partner with us.</p>
-        
-        
-        <FORM NAME="myform" ACTION="" METHOD="GET">Enter something in the box: <BR>
-            <INPUT TYPE="text" NAME="name" VALUE="name"><P>
-            <INPUT TYPE="email" NAME="email" VALUE="email"><P>
-            <INPUT TYPE="text" NAME="phone" VALUE="phone"><P>
-            <br>
-            <h3>What is your budget?</h3>
-            <input type="radio" id="low" name="budget" value="low">
-            <label for="low">low</label><br>
-            <input type="radio" id="medium" name="budget" value="medium">
-            <label for="medium">medium</label><br>
-            <input type="radio" id="high" name="budget" value="high">
-            <label for="high">high</label><br>
-            <INPUT TYPE="button" NAME="button" Value="Submit" onClick="testResults(this.form)">
-            </FORM>
-    </div>
+        <div class="footer">
+            <h2>Contact Us</h2>
+            <p>Discover ways to partner with us.</p>
+            
+            
+            <form action="https://formsubmit.co/cavan.chan@gmail.com" method="POST">
+                
+                <input type="hidden" name="_next" value="https://coderedagency.dev/thanks.html">
+                <input type="hidden" name="_subject" value="New email submission!">
+                <input type="text" name="_honey" style="display:none">
+                
+                <input type="text" name="fullName" placeholder="Full Name" required><br>
+                <input type="text" name="company" placeholder="Company" required><br>
+                <input type="tel" name="phone" placeholder="Phone Number" required><br>
+                <input type="email" name="email" placeholder="Email Address" required><br>
+                <input type="msg" name="message" placeholder="Write message here" required><br>
+                
+                <button type="submit">Send</button>
+            </form>
+        <div>
 
-    <!-- Interactive Form -->
-    <SCRIPT LANGUAGE="JavaScript">
-        function testResults (form) {
-            var TestVar = form.inputbox.value;
-            alert ("You typed: " + TestVar);
-        }
-        </SCRIPT>
-
-    <!-- Responsive Hamburger Menu -->
     <script>
         const toggleMenu = document.querySelector('.toggle');
         const navigation = document.querySelector('.navigation');
@@ -83,8 +92,7 @@
             navigation.classList.toggle('active');
         }
     </script>
-
-    <!-- Parallax Settings -->
+    
     <script>
         let text = document.getElementById('text');
         let redmoon = document.getElementById('redmoon');
@@ -113,12 +121,10 @@
             rocks.style.top = value * -0.12 + 'px';
             forest.style.top = value * 0.25 + 'px';
             header.style.top = value * 0.6 + 'px';
-            submarine.style.left = 150 + value * -0.5 + 'px';
+            submarine.style.left = 0 + value * -0.5 + 'px';
             
         })
     </script>
 
-
 </body>
-    
 </html>

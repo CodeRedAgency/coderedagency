@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+    <title>Code Red Agency</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+        <header id="header">
+            <a href="#" class="logo">Code Red Agency</a>
+            <div class="toggle"></div>
+            <ul class="navigation">
+                <li><a href="file:///C:/Users/cavan/Documents/CodeRedAgency/index.html" class="active">Home</a></li>
+                <li><a href="file:///C:/Users/cavan/Documents/CodeRedAgency/index.html">About</a></li>
+                <li><a href="file:///C:/Users/cavan/Documents/CodeRedAgency/index.html">Services</a></li>
+                <li><a href="file:///C:/Users/cavan/Documents/CodeRedAgency/index.html">Contact</a></li>
+            </ul>
+        </header>
+    
+    <section>
+        <!-- <h2 id="text"><span>It's time for a new</span><br>About Page</h2> -->
+        
+        <img src="redmoon.png" id="redmoon">
+        <img src="bird1.png" id="bird1">
+        <img src="bird2.png" id="bird2">
+        <img src="forest.png" id="forest">
+
+        <a href="/index.html" id="btn">Start</a>
+
+        <img src="wolf.png" id="wolf">
+        <img src="rocks.png" id="rocks">
+        <img src="water.png" id="water">
+        
+    </section>
+    <div class="sec">
+        <h2>Web3 Dev Agency</h2>
+        <p>Code Red is a web3 agency that helps brands demystify and better navigate the weird and wonderful world of web3.
+
+            Our mission, in the appropriated words of one Buzz Lightyear, is to help brands get to the metaverse…and beyond.</p>
+    </div>
+    <div class="footerimage">
+        
+        <img src="bottomocean.png" id="bottomocean">
+        <img src="submarine4.png" id="submarine">
+    </div>
+    
+  
+    <div class="footer">
+        <h2>Contact Us</h2>
+        <p>Discover ways to partner with us.</p>
+        
+        
+        <form action="https://formsubmit.co/cavan.chan@gmail.com" method="POST">
+            <input type="email" name="email" placeholder="Email Address" required><br>
+            <input type="hidden" name="_next" value="https://coderedagency.dev/thanks.html">
+            <input type="hidden" name="_subject" value="New email submission!">
+
+            <input type="text" name="name" placeholder="Write message here" required><br>
+            
+            <button type="submit">Send</button>
+       </form>
+
+    <!-- Responsive Hamburger Menu -->
+    <script>
+        const toggleMenu = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+        toggleMenu.onclick = function(){
+            toggleMenu.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+
+    <!-- Parallax Settings -->
+    <script>
+        let text = document.getElementById('text');
+        let redmoon = document.getElementById('redmoon');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let wolf = document.getElementById('wolf');
+        let rocks = document.getElementById('rocks');
+        let water = document.getElementById('water');
+        let forest = document.getElementById('forest');
+        let header = document.getElementById('header');
+        let bottomocean = document.getElementById('bottomocean');
+        let submarine = document.getElementById('submarine');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            // text.style.top = 50 + value * -0.1 + '%';
+            redmoon.style.top = value * -0.1 + '%';
+            // bird1.style.top = value * -1.5 + 'px';
+            // bird1.style.top = value * 0.5 + 'px';
+            // bird2.style.top = value * -0.5 + 'px';
+            // bird2.style.top = value * -0.75 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            wolf.style.top = value * -0.12 + 'px';
+            rocks.style.top = value * -0.12 + 'px';
+            // forest.style.top = value * 0.25 + 'px';
+            header.style.top = value * 0.6 + 'px';
+            submarine.style.left = 150 + value * -0.5 + 'px';
+            
+        })
+    </script>
+
+
+</body>
+    
+</html>

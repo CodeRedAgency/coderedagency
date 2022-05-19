@@ -133,7 +133,7 @@ section #text span {
 }
 
 .sec p {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #fff;
 }
 
@@ -167,38 +167,31 @@ section #text span {
 .footer {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 150vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #000000;
+  margin-top: 300px;
 }
 
 .footer h2 {
   font-size: 3.5em;
   color: #fff;
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .footer p {
-  font-size: 3.5em;
+  font-size: 1.5em;
   color: #fff;
 }
+
 .footer input {
-  color: #000;
+  color: #fff;
 }
 
-/*.bg-hide{
-  height: 57px;
-  width: 100%;
-  background: linear-gradient(to bottom, #094b65, transparent);
-  position: absolute;
-  z-index: 0;
-  top: 44%;
-} */
-
-@media screen and (max-width: 992px) {
+@media (max-width: 992px) {
   #header {
     padding: 20px;
   }
@@ -244,61 +237,34 @@ section #text span {
     background-position: center;
     background-repeat: no-repeat;
   }
-}
 
-@media screen and (max-width: 821px) {
-  section img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50vh;
-  }
-  .sec {
-    position: relative;
-    padding: 100px;
-    background: #094b65;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    z-index: 6;
-    margin-top: -600px;
-  }
-  #btn {
-    position: absolute;
-    top: 200px;
-  }
-  #redmoon {
-    width: 850px;
-    height: 360px;
-    margin-left: -19px;
-    margin-top: 8px;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  #redmoon {
-    width: 800px;
-    height: 350px;
-    margin-left: -50px;
-    margin-top: 0px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  #redmoon {
-    width: 800px;
-    height: 350px;
-    margin-left: -120px;
-    margin-top: 0px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  #redmoon {
-    width: 800px;
-    height: 350px;
-    margin-left: -190px;
-    margin-top: 0px;
+  @media (max-width: 600px) {
+    section img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50vh;
+    }
+    .sec {
+      position: relative;
+      padding: 100px;
+      background: #094b65;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      z-index: 6;
+      margin-top: -443px;
+    }
+    #btn {
+      position: absolute;
+      top: 200px;
+    }
+    #redmoon {
+      width: 800px;
+      height: 350px;
+      margin-left: -120px;
+      margin-top: -10px;
+    }
   }
 }

@@ -169,10 +169,8 @@ section #text span {
   width: 100%;
   height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #000000;
 }
 
 .footer h2 {
@@ -185,10 +183,6 @@ section #text span {
   font-size: 3.5em;
   color: #fff;
 }
-.footer input {
-  color: #000;
-}
-
 /*.bg-hide{
   height: 57px;
   width: 100%;
@@ -198,7 +192,7 @@ section #text span {
   top: 44%;
 } */
 
-@media screen and (max-width: 992px) {
+@media (max-width: 992px) {
   #header {
     padding: 20px;
   }
@@ -246,7 +240,7 @@ section #text span {
   }
 }
 
-@media screen and (max-width: 821px) {
+@media (max-width: 600px) {
   section img {
     position: absolute;
     top: 0;
@@ -262,43 +256,19 @@ section #text span {
     flex-direction: column;
     justify-items: center;
     z-index: 6;
-    margin-top: -600px;
+    margin-top: -443px;
   }
   #btn {
     position: absolute;
     top: 200px;
   }
-  #redmoon {
-    width: 850px;
-    height: 360px;
-    margin-left: -19px;
-    margin-top: 8px;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  #redmoon {
+  #redmoon{
     width: 800px;
     height: 350px;
-    margin-left: -50px;
-    margin-top: 0px;
+    margin-left: -120px; 
+    margin-top: -10px;
   }
+
 }
 
-@media screen and (max-width: 600px) {
-  #redmoon {
-    width: 800px;
-    height: 350px;
-    margin-left: -120px;
-    margin-top: 0px;
-  }
-}
 
-@media screen and (max-width: 500px) {
-  #redmoon {
-    width: 800px;
-    height: 350px;
-    margin-left: -190px;
-    margin-top: 0px;
-  }
-}
