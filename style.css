@@ -9,7 +9,8 @@
 }
 
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  /* overflow-y: hidden; */
   background: #000;
 }
 
@@ -18,6 +19,12 @@ body {
   background: #fff;
   min-height: 100vh;
 }
+
+/* body {
+  overflow-x: hidden;
+  background: #fff;
+  min-height: 100vh;
+} */
 
 #header {
   position: absolute;
@@ -172,7 +179,8 @@ section #text span {
 .footer {
   position: relative;
   width: 100%;
-  /* height: 100vh; */
+  min-height: 100vh;
+  padding: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -253,6 +261,18 @@ section #text span {
     background-position: center;
     background-repeat: no-repeat;
   }
+  .footer {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 300px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    margin: 50px 0px 50px 0px;
+  }
 }
 
 @media screen and (max-width: 821px) {
@@ -283,6 +303,18 @@ section #text span {
     margin-left: -19px;
     margin-top: 8px;
   }
+  .footer {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 300px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    margin: 50px 0px 50px 0px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -291,6 +323,18 @@ section #text span {
     height: 350px;
     margin-left: -50px;
     margin-top: 0px;
+  }
+  .footer {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 700px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    margin: 50px 0px 50px 0px;
   }
 }
 
@@ -301,6 +345,18 @@ section #text span {
     margin-left: -120px;
     margin-top: 0px;
   }
+  .footer {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 300px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    margin: 50px 0px 50px 0px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -309,5 +365,19 @@ section #text span {
     height: 350px;
     margin-left: -190px;
     margin-top: 0px;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .footer {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 1080px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    margin: 50px 0px 50px 0px;
   }
 }
